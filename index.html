@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!--Пробовал подключение boilerplate через Initializr с привязкой к Boorstrap (просто в качестве теста) -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+        
+  <div class="container">
+
+    <div class="sidebar">
+        <div class="header-logo"><img src="img/logo.png" alt=""></div>
+        <div class="callback">
+            <div class="callback__header">Заказать звонок</div>
+            <form action="">
+                <ul class="sidebar__form">
+                    <li class="sidebar__form-item"><label for="sidebar__form-name" class="sidebar__form-label">Ваше имя</label> <input type="text" name="firstname" class="sidebar__form-name"></li>
+                    <li class="sidebar__form-item"><label for="sidebar__form-tel" class="sidebar__form-label">Телефон</label> <input type="tel" name="telnumber" class="sidebar__form-tel"></li>
+                    <li class="sidebar__form-item">
+                        <label for="sidebar__form-day" class="sidebar__form-label">Дата звонка</label>
+
+                            <select class="sidebar__form-day">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                              <option>06</option>
+                              <option>07</option>
+                              <option>08</option>
+                              <option>09</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                              <option>16</option>
+                              <option>17</option>
+                              <option>18</option>
+                              <option>19</option>
+                              <option>20</option>
+                              <option>21</option>
+                              <option>22</option>
+                              <option>23</option>
+                              <option>24</option>
+                              <option>25</option>
+                              <option>26</option>
+                              <option>27</option>
+                              <option>28</option>
+                              <option>29</option>
+                              <option>30</option>
+                              <option>31</option>
+                            </select>
+
+                        <select class="sidebar__form-month">
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                    </li>
+                    <li class="sidebar__form-item"><textarea name="" id="" class="sidebar__form-comment"></textarea></li>
+                    <li class="sidebar__form-item"><input type="submit" class="sidebar__form-submit" value="Отправить"><input type="reset" class="sidebar__form-reset" value="Очистить"></li>
+                </ul>
+            </form>
+        </div>
+        <div class="gallery">
+            <ul class="gallery__pictures">
+              <li class="gallery__pictures-item"><img src="img/pic_03.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_05.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_07.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_12.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_03.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_15.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_20.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_21.png" alt=""></li>
+              <li class="gallery__pictures-item"><img src="img/pic_23.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="contacts">
+              <ul class="contacts__list">
+                <li class="contacts__list-item"><img src="img/location.png" alt="" class="contacts__list-img">г.Москва, ул.Новая 246, офис 214</li>
+                <li class="contacts__list-item"><img src="img/tel-num.png" alt="" class="contacts__list-img"><a href="tel:+79213221232" class="contacts__list-img">+7(921) 322 12 32</a></li>
+              </ul>
+        </div>
+
+    </div>                      
+    
+
+
+
+    <div class="main-content">
+        
+<!-- SLIDER -->
+
+        <div class="slider">
+            <div class="slider__list--wrap">
+                <ul class="slider__list">
+                  <li class="slider__item active">
+                      <img src="img/slide1.jpg" alt="">
+                  </li> 
+                  <li class="slider__item">
+                      <img src="img/slide2.jpg" alt="">
+
+                  </li>
+                  <li class="slider__item"><img src="img/slide3.jpg" alt=""></li>
+                </ul>
+                <div class="slider__item-info">
+                    <p>
+                        <a href="" class="slider__item-link">I-Mac за пол цены</a>
+                    </p>
+                    <p class="slider__item-description">
+                        Принeси свой старый мак и получи скидку на новый!
+                    </p>
+                </div>
+            </div>
+            <div class="slider__controls">
+                <a href="" class="slider__controls-buttons slider__controls-buttons_next">След.</a>
+                <a href="" class="slider__controls-buttons slider__controls-buttons_prev">Пред.</a>
+            </div>
+        </div>
+
+<!-- BESTSELLER -->
+
+        <div class="products">
+
+
+            <div class="products__bestseller">
+                <div class="products__header">    
+                    <div class="products__header-hr fl-left"></div>Популярные товары<div class="products__header-hr fl-right"></div>
+                </div>
+                <ul class="bestseller__list">
+                    <li class="bestseller__list-item">
+                        <div class="bestseller__list-product">
+                            <figure class="bestseller__list-product-inner">
+                                <img src="img/product4.png" alt="" class="bestseller__list-product-img">
+                                <figcaption class="bestseller__list-product-name">
+                                    <a href="" class="bestseller__list-product-link">
+                                        Apple Thunderb Display 27"
+                                    </a>
+                                </figcaption>                           
+                            </figure>
+                            <table class="product__desc">
+                              <tr>
+                                <td class="product__desc-item">Артикул</td>
+                                <td class="product__desc-value">42787825</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Опция</td>
+                                <td class="product__desc-value">включена</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Цвет</td>
+                                <td class="product__desc-value">серебристый</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Размер</td>
+                                <td class="product__desc-value">280*1245*90</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Вес</td>
+                                <td class="product__desc-value">9 кг</td>
+                              </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="bestseller__list-item">
+                        <div class="bestseller__list-product">
+                            <figure class="bestseller__list-product-inner">
+                                <img src="img/product1.png" alt="" class="bestseller__list-product-img">
+                                <figcaption class="bestseller__list-product-name">
+                                    <a href="" class="bestseller__list-product-link">
+                                        Apple Thunderb Display 27"
+                                    </a>
+                                </figcaption>                           
+                            </figure> 
+                            <table class="product__desc">
+                              <tr>
+                                <td class="product__desc-item">Артикул</td>
+                                <td class="product__desc-value">42787825</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Опция</td>
+                                <td class="product__desc-value">включена</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Цвет</td>
+                                <td class="product__desc-value">серебристый</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Размер</td>
+                                <td class="product__desc-value">280*1245*90</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Вес</td>
+                                <td class="product__desc-value">9 кг</td>
+                              </tr>
+                            </table>                                                       
+                        </div>
+                    </li>
+                    <li class="bestseller__list-item">
+                        <div class="bestseller__list-product">
+                            <figure class="bestseller__list-product-inner">
+                                <img src="img/product2.png" alt="" class="bestseller__list-product-img">
+                                <figcaption class="bestseller__list-product-name">
+                                    <a href="" class="bestseller__list-product-link">
+                                        Apple Thunderb Display 27"
+                                    </a>
+                                </figcaption>                           
+                            </figure>
+                            <table class="product__desc">
+                              <tr>
+                                <td class="product__desc-item">Артикул</td>
+                                <td class="product__desc-value">42787825</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Опция</td>
+                                <td class="product__desc-value">включена</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Цвет</td>
+                                <td class="product__desc-value">серебристый</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Размер</td>
+                                <td class="product__desc-value">280*1245*90</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Вес</td>
+                                <td class="product__desc-value">9 кг</td>
+                              </tr>
+                            </table>                                                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="products__sales">
+                <div class="products__header">    
+                    <div class="products__header-hr fl-left"></div>Товары со скидкой<div class="products__header-hr fl-right"></div>
+                </div>
+                <ul class="sales__list">
+                    <li class="sales__list-item">
+                        <div class="sales__list-product">
+                            <figure class="sales__list-product-inner">
+                                <img src="img/product3.png" alt="" class="sales__list-product-img">
+                                <figcaption class="sales__list-product-name">
+                                    <a href="" class="sales__list-product-link">
+                                        Apple Thunderb Display 27"
+                                    </a>
+                                </figcaption>                           
+                            </figure>
+                            <table class="product__desc">
+                              <tr>
+                                <td class="product__desc-item">Артикул</td>
+                                <td class="product__desc-value">42787825</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Опция</td>
+                                <td class="product__desc-value">включена</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Цвет</td>
+                                <td class="product__desc-value">серебристый</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Размер</td>
+                                <td class="product__desc-value">280*1245*90</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Вес</td>
+                                <td class="product__desc-value">9 кг</td>
+                              </tr>
+                            </table>                             
+                        </div>
+                    </li>
+                    <li class="sales__list-item">
+                        <div class="sales__list-product">
+                            <figure class="sales__list-product-inner">
+                                <img src="img/product5.png" alt="" class="sales__list-product-img">
+                                <figcaption class="sales__list-product-name">
+                                    <a href="" class="sales__list-product-link">
+                                        Apple Thunderb Display 27"
+                                    </a>
+                                </figcaption>                           
+                            </figure>
+                            <table class="product__desc">
+                              <tr>
+                                <td class="product__desc-item">Артикул</td>
+                                <td class="product__desc-value">42787825</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Опция</td>
+                                <td class="product__desc-value">включена</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Цвет</td>
+                                <td class="product__desc-value">серебристый</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Размер</td>
+                                <td class="product__desc-value">280*1245*90</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Вес</td>
+                                <td class="product__desc-value">9 кг</td>
+                              </tr>
+                            </table>                            
+                        </div>
+                    </li>
+                    <li class="sales__list-item">
+                        <div class="sales__list-product">
+                            <figure class="sales__list-product-inner">
+                                <img src="img/product6.png" alt="" class="sales__list-product-img">
+                                <figcaption class="sales__list-product-name">
+                                    <a href="" class="sales__list-product-link">
+                                        Apple Thunderb Display 27"
+                                    </a>
+                                </figcaption>                           
+                            </figure>
+                            <table class="product__desc">
+                              <tr>
+                                <td class="product__desc-item">Артикул</td>
+                                <td class="product__desc-value">42787825</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Опция</td>
+                                <td class="product__desc-value">включена</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Цвет</td>
+                                <td class="product__desc-value">серебристый</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Размер</td>
+                                <td class="product__desc-value">280*1245*90</td>
+                              </tr>
+                              <tr>
+                                <td class="product__desc-item">Вес</td>
+                                <td class="product__desc-value">9 кг</td>
+                              </tr>
+                            </table>                            
+                        </div>
+                    </li>
+                </ul>                                
+            </div>
+        </div>    
+    </div>
+
+
+
+
+  </div>
+
+<!--FOOTER-->
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo-footer.png" alt="лого">
+        </div>
+        <div class="footer-menus">
+          <ul class="footer-menus__submenu-about">
+            <li class="footer-menus__submenu-about-item"><b>О магазине</b></li>
+            <li class="footer-menus__submenu-about-item"><a href="" class="footer-menus__submenu-about-link">О нас</a></li>
+            <li class="footer-menus__submenu-about-item"><a href="" class="footer-menus__submenu-about-link">Наши цены</a></li>
+            <li class="footer-menus__submenu-about-item"><a href="" class="footer-menus__submenu-about-link">Наши скидки</a></li>
+            <li class="footer-menus__submenu-about-item"><a href="" class="footer-menus__submenu-about-link">Акции</a></li>
+          </ul>
+          
+          <ul class="footer-menus__submenu-catalog">
+            <li class="footer-menus__submenu-catalog-item"><b>Каталог</b></li>
+            <li class="footer-menus__submenu-catalog-item"><a href="" class="footer-menus__submenu-catalog-link">Смартфоны</a></li>
+            <li class="footer-menus__submenu-catalog-item"><a href="" class="footer-menus__submenu-catalog-link">Планшеты</a></li>
+            <li class="footer-menus__submenu-catalog-item"><a href="" class="footer-menus__submenu-catalog-link">Компьютеры</a></li>
+            <li class="footer-menus__submenu-catalog-item"><a href="" class="footer-menus__submenu-catalog-link">Аксессуары</a></li>
+          </ul>
+
+          <ul class="footer-menus__submenu-contacts">
+            <li class="footer-menus__submenu-contacts-item"><b>Контакты</b></li>
+            <li class="footer-menus__submenu-contacts-item"><a href="" class="footer-menus__submenu-contacts-link">Телефоны</a></li>
+            <li class="footer-menus__submenu-contacts-item"><a href="" class="footer-menus__submenu-contacts-link">Адреса</a></li>
+            <li class="footer-menus__submenu-contacts-item"><a href="" class="footer-menus__submenu-contacts-link">Карта проезда</a></li>
+            <li class="footer-menus__submenu-contacts-item"><a href="" class="footer-menus__submenu-contacts-link">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div class="footer-soc-but">
+          <ul class="footer-soc-but__stores">
+            <li class="footer-soc-but__stores-item"><a href="" class="footer-soc-but__stores-link"><img src="img/appstore.png" alt="" class=""></a></li>
+            <li class="footer-soc-but__stores-item"><a href="" class="footer-soc-but__stores-link"><img src="img/googlestore.png" alt="" class=""></a></li>
+          </ul>
+          <ul class="footer-soc-but__icons">
+            <li class="footer-soc-but__icons-items"><a href="" class="footer-soc-but__icons-link"><img src="img/vk-icon.png" alt="" class=""></a></li>
+            <li class="footer-soc-but__icons-items"><a href="" class="footer-soc-but__icons-link"><img src="img/fb-icon.png" alt="" class=""></a></li>
+            <li class="footer-soc-but__icons-items"><a href="" class="footer-soc-but__icons-link"><img src="img/twi-icon.png" alt="" class=""></a></li>
+          </ul>
+        </div>    
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>
