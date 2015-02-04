@@ -405,6 +405,42 @@ bottom: 0;
     padding: 22px 0 0 100px;
 }
 
+.toTop {
+	background:#f7f7f7;
+	text-align:center;
+	padding:5px 10px;
+	position:fixed;
+	bottom:255px; /* отступ кнопки от нижнего края страницы*/
+	right:10px;
+	cursor:pointer;
+	display:none;
+	color:#fff;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #00b9fe;
+}
+.toTop:before, .toTop:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 6px 5px 6px;
+	border-color: transparent transparent #00b9fe transparent;
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	margin-left: -6px;
+}
+
+.toTop:after {
+	border-color: transparent transparent #fff transparent;
+	top: auto;
+	bottom: 0;
+}
+
+
+
 /* FOOTER */
 
 .footer {
