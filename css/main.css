@@ -1,5 +1,5 @@
 body {
-    font-family: 'ElektraLightPro';
+    font-family:'ElektraLightPro';
 }
 
 /* Прибиваем футер к низу страницы */
@@ -82,6 +82,11 @@ p {
 .sidebar__form-label {
     font-weight: normal;
 }
+.sidebar__form-label-day {
+    float: left;
+    font-weight: normal;
+    margin-right: 10px;
+}
 .sidebar__form-item:nth-child(4) {
     margin:0 0 45px 0;
 }
@@ -99,7 +104,7 @@ p {
 }
 
 .sidebar__form-day {
-    margin: 0 0 0 21px;
+
 }
 .sidebar__form-month {
     margin: 0 0 0 8px;
@@ -107,6 +112,7 @@ p {
 .sidebar__form-comment {
     height: 68px;
     width: 210px;
+    resize: none;
 }
 .sidebar__form-submit, .sidebar__form-reset {
     padding: 8px 10px;
@@ -137,6 +143,8 @@ p {
     padding:0;
     list-style: none;
 }
+
+
 .gallery__pictures-item {
     float:left;
     margin:0 10px 10px 0;
@@ -194,10 +202,10 @@ p {
     width: 3000px;
     position: relative;
     left: 0;
-    transition:all 1s ease;
-    -moz-transition:all 1s ease;
-    -webkit-transition:all 1s ease;
-    -o-transition:all 1s ease;
+    transition:all 0.1s ease;
+    -moz-transition:all 0.1s ease;
+    -webkit-transition:all 0.1s ease;
+    -o-transition:all 0.1s ease;
     padding:0;
 }
 .slider__list:after {       /* очищаем поток */
@@ -311,23 +319,23 @@ bottom: 0;
 }
 .bestseller__list {
     margin-bottom: 40px;
-    padding: 0;
-    list-style: none;
     display: inline-block;
+    list-style: none;
+    padding: 0;
 }
 .bestseller__list-item {
-    display: inline-block;
     margin: 0px 21px 0 0;
+    display: inline-block;
 }
 .bestseller__list-item:nth-child(3) {
     display: inline-block;
     margin: 0;
 }
 .bestseller__list-item {
-    width: 230px;
-    height: 235px;
     border: 1px solid #eee;
     transition: all 0.5s;
+    width: 230px;
+    float: left;
 }
 .bestseller__list-item:hover {
     -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.3);
@@ -339,18 +347,21 @@ bottom: 0;
     clear: both;
 }
 .bestseller__list-product-inner {
-    height: 95px;
+    min-height: 95px;
 }
 .bestseller__list-product-img {
     float:left;
     padding: 0 0 0 5px;
 }
 .bestseller__list-product-name {
+    min-height: 95px;
     padding: 22px 0 0 100px;
+    vertical-align: bottom;;;;;
 }
 .product__desc {
     width:100%;
     color: #5c7b98;
+    margin-bottom: 10px;
 }
 .product__desc-item {
     padding-left: 12px;
@@ -380,9 +391,9 @@ bottom: 0;
 }
 .sales__list-item {
     width: 230px;
-    height: 235px;
     border: 1px solid #eee;
     transition: all 0.5s;
+    float: left;
 }
 .sales__list-item:hover {
     -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.3);
@@ -395,7 +406,7 @@ bottom: 0;
     clear: both;
 }
 .sales__list-product-inner {
-    height: 95px;
+    min-height: 95px;
 }
 .sales__list-product-img {
     float:left;
@@ -406,37 +417,37 @@ bottom: 0;
 }
 
 .toTop {
-	background:#f7f7f7;
-	text-align:center;
-	padding:5px 10px;
-	position:fixed;
-	bottom:255px; /* отступ кнопки от нижнего края страницы*/
-	right:10px;
-	cursor:pointer;
-	display:none;
-	color:#fff;
-	font-size: 18px;
-	font-weight: bold;
-	background-color: #00b9fe;
+    background:#f7f7f7;
+    text-align:center;
+    padding:5px 10px;
+    position:fixed;
+    bottom:255px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #00b9fe;
 }
 .toTop:before, .toTop:after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 6px 5px 6px;
-	border-color: transparent transparent #00b9fe transparent;
-	position: absolute;
-	top: -5px;
-	left: 50%;
-	margin-left: -6px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 5px 6px;
+    border-color: transparent transparent #00b9fe transparent;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -6px;
 }
 
 .toTop:after {
-	border-color: transparent transparent #fff transparent;
-	top: auto;
-	bottom: 0;
+    border-color: transparent transparent #fff transparent;
+    top: auto;
+    bottom: 0;
 }
 
 
