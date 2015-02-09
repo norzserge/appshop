@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/jquery.jscrollpane.css">
-    <link href="css/select2.css" />
+    <link rel="stylesheet" href="css/select2.css" />
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
@@ -434,13 +434,18 @@
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/select2.min.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script src="js/jquery.jscrollpane.js"></script>
   <script>
 
+    jQuery(document).ready(function(){
+       
+        $('select').select2();
 
-    $(document).ready(function() {
-      $('select').select2();
-    }); 
+        var $eventSelect = $(".custom-select");    
+        $eventSelect.on("select2:open", jScrollPane);
 
+    });
 
   </script>
 
