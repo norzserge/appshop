@@ -38,7 +38,7 @@
             <form action="">
                 <ul class="sidebar__form">
                     <li class="sidebar__form-item"><label for="sidebar__form-name" class="sidebar__form-label">Ваше имя</label> <input type="text" placeholder="Сергей" name="firstname" class="sidebar__form-name"></li>
-                    <li class="sidebar__form-item"><label for="sidebar__form-tel" class="sidebar__form-label">Телефон</label> <input type="tel" placeholder="+7 (913) 525 2745" name="telnumber" class="sidebar__form-tel"></li>
+                    <li class="sidebar__form-item"><label for="sidebar__form-tel" class="sidebar__form-label">Телефон</label> <input type="tel" placeholder="+7 (913) 525 2745" name="telnumber" class="sidebar__form-tel" id="phone"></li>
                     <li class="sidebar__form-item">
                         <label for="sidebar__form-day" class="sidebar__form-label-day">Дата звонка</label>                      
                           <div class="feedback__row feedback__row_double">
@@ -439,7 +439,15 @@
   <script src="js/slider.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom-select.js"></script>
-
+ <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+    <script type="text/javascript">
+jQuery(function($){
+   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+   $("#phone").mask("(999) 999-9999");
+   $("#tin").mask("99-9999999");
+   $("#ssn").mask("999-99-9999");
+});
+    </script> 
 
 </body>
 </html>
